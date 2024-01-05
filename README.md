@@ -1,3 +1,6 @@
+Dependencies:
+* [jbrogers63/parent-pom](https://github.com/jbrogers63/parent-pom)
+
 To install:
 
 ```
