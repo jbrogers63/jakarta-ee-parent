@@ -7,12 +7,12 @@
     <parent>
         <groupId>jbrogers63</groupId>
         <artifactId>parent-pom</artifactId>
-        <version>0.1.0</version>
+        <version>0.2.0</version>
     </parent>
 
     <groupId>jbrogers63</groupId>
     <artifactId>jakarta-ee-parent</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <packaging>pom</packaging>
 
     <name>Parent - JBRogers63 Jakarta EE Web Projects</name>
@@ -21,7 +21,7 @@
 
     <properties>
         <jakarta.version>10.0.0</jakarta.version>
-        <junit.version>5.9.2</junit.version> 
+        <maven.plugin.war>3.4.0</maven.plugin.war>
     </properties>
 
     <dependencies>
@@ -37,14 +37,6 @@
             <version>${jakarta.version}</version>
             <scope>provided</scope>
         </dependency>
-
-        <!-- Test Dependencies -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -52,7 +44,7 @@
             <plugins>
                 <plugin>
                     <artifactId>maven-war-plugin</artifactId>
-                    <version>3.4.0</version>
+                    <version>${maven.plugin.war}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
